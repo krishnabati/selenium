@@ -17,16 +17,16 @@ public class tc1 {
 		  driver = new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.get("http://54.237.239.50:8080/DynamicJavaProject-Chat-Release-2.1/");
-		
+		  driver.get("http://54.160.164.82:8080/DynamicJavaProject-Chat-Release-2.1/");
+
 		}
 		
 	  @Test
 	  public void verfiy() {
 		 
 		//   driver.findElement(By.xpath("//img[@class='v-button v-widget']")).click();
-		  driver.findElement(By.id("fname")).sendKeys("Krishna");
-		  driver.findElement(By.id("lname")).sendKeys("Selenium");
+		  driver.findElement(By.id("fname")).sendKeys("satya");
+		  driver.findElement(By.name("lname")).sendKeys("T");
 		  driver.findElement(By.id("submit")).sendKeys("9876543210");
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
