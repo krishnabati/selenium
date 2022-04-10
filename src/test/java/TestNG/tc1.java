@@ -17,7 +17,7 @@ public class tc1 {
 		  driver = new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.get("http://54.160.164.82:8080/DynamicJavaProject-Chat-Release-2.1/");
+		  driver.get("http://54.197.196.62:8080/DynamicJavaProject-Chat-Release-2.1/");
 
 		}
 		
@@ -25,8 +25,8 @@ public class tc1 {
 	  public void verfiy() {
 		 
 		//   driver.findElement(By.xpath("//img[@class='v-button v-widget']")).click();
-		  driver.findElement(By.id("fname")).sendKeys("satya");
-		  driver.findElement(By.name("lname")).sendKeys("T");
+		  driver.findElement(By.id("fname")).sendKeys("Ram");
+		  driver.findElement(By.name("lname")).sendKeys("babu");
 		  driver.findElement(By.id("submit")).sendKeys("9876543210");
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
